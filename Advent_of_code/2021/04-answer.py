@@ -42,14 +42,14 @@ for line in lines:
 
         #increment matrix at coords positions
         for n in range(y_min,y_max+1):
-            matrix[(n-1)][int(coords[0])] += 1 
+            matrix[n][int(coords[0])] += 1 
     
     if coords[1] == coords[3]:
         x_min = min([int(coords[0]), int(coords[2])])
         x_max = max([int(coords[0]), int(coords[2])])
         
         for n in range(x_min,x_max+1):
-            matrix[int(coords[1])][n-1] += 1 
+            matrix[int(coords[1])][n] += 1 
 
     else:
         continue
