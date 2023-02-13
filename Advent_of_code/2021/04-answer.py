@@ -82,7 +82,7 @@ for line in lines:
     x_min = min([int(coords[0]), int(coords[2])])
     x_max = max([int(coords[0]), int(coords[2])])
 
-    #look for coords where either x or y doesn't change 
+    #look for coords where either x or y doesn't change      
     if coords[0] == coords[2]:
 
         #increment matrix at coords positions
