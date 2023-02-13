@@ -31,7 +31,6 @@ for i in range(0,1000):
     matrix[i] = list(0 for j in range(0,1000))
 
 #increase value of matrix where values correspond to coords
-
 for line in lines:
 
     coords = re.findall("[\\d]+", line)
@@ -69,14 +68,12 @@ print(amount)
 #answer 2
 
 #create 1000x1000 matrix
-
 matrix = {}
 
 for i in range(0,1000):
     matrix[i] = list(0 for j in range(1,1001))
 
 #increase value of matrix where values correspond to coords
-
 for line in lines:
 
     coords = re.findall("[\\d]+", line) 
@@ -90,11 +87,11 @@ for line in lines:
 
         #increment matrix at coords positions
         for n in range(y_min,y_max+1):
-            matrix[(n-1)][int(coords[0])] += 1 
+            matrix[(n)][int(coords[0])] += 1 
     
     elif coords[1] == coords[3]:
         for n in range(x_min,x_max+1):
-            matrix[int(coords[1])][n-1] += 1 
+            matrix[int(coords[1])][n] += 1 
 
     else:
 
