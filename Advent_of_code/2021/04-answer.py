@@ -102,7 +102,7 @@ for line in lines:
         if ydiff and xdiff > 0
 
             s = startpositie, c = stap tot einde
-                 0	1	2	3	4	5
+                    0	1	2	3	4	5
 
             0	    0	0	0	0	0	0
             1	    0	s	0	0	0	0
@@ -113,7 +113,7 @@ for line in lines:
 
         if ydiff and xdiff < 0
 
-                 0	1	2	3	4	5
+                    0	1	2	3	4	5
 
             0	    0	0	0	0	0	0
             1	    0	c	0	0	0	0
