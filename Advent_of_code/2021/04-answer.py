@@ -42,14 +42,14 @@ for line in lines:
 
         #increment matrix at coords positions
         for n in range(y_min,y_max+1):
-            matrix[(n-1)][int(coords[0])] += 1 
+            matrix[n][int(coords[0])] += 1 
     
     elif coords[1] == coords[3]:
         x_min = min([int(coords[0]), int(coords[2])])
         x_max = max([int(coords[0]), int(coords[2])])
         
         for n in range(x_min,x_max+1):
-            matrix[int(coords[1])][n-1] += 1 
+            matrix[int(coords[1])][n] += 1 
 
     else:
         continue
@@ -102,7 +102,7 @@ for line in lines:
         if ydiff and xdiff > 0
 
             s = startpositie, c = stap tot einde
-                 0	1	2	3	4	5
+                    0	1	2	3	4	5
 
             0	    0	0	0	0	0	0
             1	    0	s	0	0	0	0
@@ -113,7 +113,7 @@ for line in lines:
 
         if ydiff and xdiff < 0
 
-                 0	1	2	3	4	5
+                    0	1	2	3	4	5
 
             0	    0	0	0	0	0	0
             1	    0	c	0	0	0	0
